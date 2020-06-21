@@ -1,0 +1,39 @@
+#page-create-point{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+#page-create-point header{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#page-create-point header a{
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+}
+
+#page-create-point header a span{
+    margin-right: 16px;
+    background-image: url('../imagens/arrow-left.svg');
+    display: flex;
+    width: 24px;
+    height: 24px;
+}
+
+form{
+    background-color: rgba(219, 216, 216, 0.815);
+    border-radius: 8px;
+    margin: 80px auto;
+    max-width: 730px;
+    padding: 64px;
+    box-sizing: border-box;
+}
