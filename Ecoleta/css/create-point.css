@@ -131,9 +131,14 @@ form button:hover{
 }
 
 .itens_grid li span{
+    margin-top: 12px;
     flex: 1;
     display: flex;
     align-items: center;
 
     color: var(--title-color);
+}
+.itens_grid li.selected{
+    background-color: #e1faec;
+    border: 2px solid#34cb79;
 }
