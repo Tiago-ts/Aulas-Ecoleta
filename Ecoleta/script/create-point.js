@@ -56,6 +56,18 @@ document
        item.addEventListener("click", handleSelectedItem)
    }
 
+   let selected = []
+
    function handleSelectedItem(event){
-       console.log(event.target)
+
+    //adicionar ou remover uma classe com java script
+
+       const itemLi = event.target
+
+       itemLi.classList.toggle("selected")
+
+       const itemId = event.target.dataset.id
+       console.log(itemId)
+
+       //verificar itens add
    }
