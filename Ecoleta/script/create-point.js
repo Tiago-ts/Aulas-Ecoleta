@@ -56,7 +56,7 @@ document
        item.addEventListener("click", handleSelectedItem)
    }
 
-   let selected = []
+   let selectedItems = []
 
    function handleSelectedItem(event){
 
@@ -67,7 +67,35 @@ document
        itemLi.classList.toggle("selected")
 
        const itemId = event.target.dataset.id
-       console.log(itemId)
+       //console.log(itemId)
 
        //verificar itens add
+
+       const alreadySelected = selectedItems.findIndex(item => {
+           const itemFound = item == itemId // sera true ou false
+           return itemFound
+
+       })
+       //console.log(alreadySelected)
+
+       if(alreadySelected >= 0 ){
+           //tirar da selecao 
+           const filteredItems = selectedItems.filter(item => {
+               const itemIsDifferent = item != itemId //false
+               return itemIsDifferent
+           })
+
+           selectedItems = filteredItems
+
+          // console.log(filteredItems)
+
+    } else {
+        //se nao estiver selecionado add na lista 
+        // adicionado a selecao
+        selectedItems.push(itemId)
+    }
+    //console.log(selectedItems)
+
+
+       
    }
