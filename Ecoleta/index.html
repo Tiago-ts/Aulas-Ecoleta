@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
@@ -38,19 +39,32 @@
         </div>
     </div>
 
-    <div id="modal">
+    <div id="modal" class="hidden">
+
         <div class="content">
+
             <div class="header">
+
                 <h1>Pontos de coleta</h1>
-                <a href="">Fechar</a>
+                <a href="#">Fechar</a>
+
             </div>
             <form action="">
-                <label for="search">
-                    
-                </label>
+
+                <label for="search">Cidade</label>
+                <div class="search field">
+
+                    <input type="text" name="search" placeholder="Digite a cidade">
+                    <button>
+                        <img src="imagens/search.svg" alt="Buscar">
+                    </button>
+                </div>
+
             </form>
         </div>
     </div>
+
+    <script src="scripts/index.js"></script>
     
 </body>
 
